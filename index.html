@@ -1,497 +1,357 @@
-<!DOCTYPE HTML>
-<!--
-	Template for the website supplied by:
-	Read Only by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+<!doctype html>
 <html lang="en">
-	<head>
-		<title>Warren Ross</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Warren Ross — Data Science</title>
+  <meta name="description" content="Warren Ross — undergraduate Data Science student at the University of Arkansas. Coffee trade visualizations, statistical analysis, and browser-based machine learning." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8C%8A%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/site.css" />
+</head>
+<body>
 
-		<!-- Header -->
-			<section id="header">
-				<header>
-					<span class="image avatar"><img src="images/avatar.png" alt="" /></span>
-					<h1 id="logo"><a href="#">Warren Ross</a></h1>
-					<p>Chasing my passion to make things.</br>Show me the DATA!</br> I want to connect with people and teams about Data Science, Dev Ops!<br />
-					</p>
-				</header>
-				<nav id="nav">
-					<ul>
-						<li><a href="#one" class="active">Welcome</a></li>
-						<li><a href="#two">Accomplishments</a></li>
-						<li><a href="#three">About Me</a></li>
-						<li><a href="#four">Contact</a></li>
-					</ul>
-				</nav>
-				<footer>
-					<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/warrenrross" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
-							<li><a href="https://github.com/warrenrross" class="icon brands fa-github"><span class="label">Github</span></a></li>
-							<li><a href="https://medium.com/@warrenrross" class="icon brands fa-medium"><span class="label">Medium</span></a></li>
-							<li><a href="https://twitter.com/warrenrross" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="https://dev.to/warrenrross" class="icon brands fa-dev"><span class="label">DEV Profile</span></a></li>
-							<li><a href="https://www.instagram.com/warrenrross/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-						</ul>
-				</footer>
-			</section>
+<header class="site-header">
+  <div class="container nav-row">
+    <a class="brand" href="#top">
+      <span class="brand-mark" aria-hidden="true">~</span>
+      <span class="brand-name">Warren Ross</span>
+    </a>
+    <nav class="primary-nav" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#writing">Writing</a>
+      <a href="#connect">Connect</a>
+    </nav>
+  </div>
+</header>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+<main id="top">
 
-				<!-- Main -->
-					<div id="main">
+  <!-- HERO ------------------------------------------------------------ -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Data Science · Coffee · Curiosity</p>
+        <h1>Climbing out of the ocean and into data&nbsp;science.</h1>
+        <p class="lede">
+          I'm Warren — undergraduate Data Science student at the University of
+          Arkansas, former Navy diver, and a hobby-collector who finally found
+          one that gives back. I build data visualizations, write statistical
+          analyses, and ship browser-based machine learning demos.
+        </p>
+        <div class="cta-row">
+          <a class="btn primary" href="#work">See selected work</a>
+          <a class="btn ghost" href="#connect">Get in touch</a>
+        </div>
+      </div>
 
-						<!-- One -->
-							<section id="one">
-								<div class="image main" data-position="center">
-									<!-- <header class="major">
-										<h2>Evolving with Data!</h2>
+      <!-- Journey triptych: water → sky → data -->
+      <figure class="triptych" aria-label="A three-panel composition: water to sky to data">
+        <!-- Panel 1 — Water (placeholder slot; awaiting Navy/dive photo) -->
+        <div class="panel panel-water" aria-label="Water — placeholder for a future Navy diver photo">
+          <div class="panel-placeholder">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M2 16c2-2 4-2 6 0s4 2 6 0 4-2 6 0 4 2 6 0" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M2 20c2-2 4-2 6 0s4 2 6 0 4-2 6 0 4 2 6 0" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity=".55"/>
+              <path d="M12 4l3 5h-2v3h-2V9H9l3-5z" fill="currentColor" opacity=".7"/>
+            </svg>
+            <span>Water</span>
+            <small>Navy diver · Pearl Harbor</small>
+          </div>
+        </div>
+        <!-- Panel 2 — Sky -->
+        <div class="panel panel-sky">
+          <img src="images/avatar.png" alt="Warren skydiving in free-fall above coastal mountains" loading="eager" />
+          <figcaption>Sky · the leap</figcaption>
+        </div>
+        <!-- Panel 3 — Data (the headshot) -->
+        <div class="panel panel-data">
+          <img src="images/headshot.jpg" alt="Warren Ross, portrait, present day" loading="eager" />
+          <figcaption>Data · ashore, doing the work</figcaption>
+        </div>
+      </figure>
+    </div>
+  </section>
 
-										<h3>Welcome to my GitHub Pages!</h3>
-									</header> -->
-									<img src="images/evolution-man-to-machine.jpeg" alt="" />
-									<div class="centered" >
-											<h2>Evolving with Data!</h2>
-									</div>
-								</div>
-								<div class="container">
-									<!-- <header class="major">
-										<h2>Evolving with Data!</h2>
+  <!-- ABOUT / JOURNEY ------------------------------------------------- -->
+  <section id="about" class="section section-about">
+    <div class="container narrow">
+      <h2>About</h2>
+      <p>
+        My career started underwater. I spent nine years as a U.S. Navy diver
+        out of Pearl Harbor — ship's husbandry, salvage and recovery from
+        Southeast Asia to the Middle East, and emergency medical response for
+        7th fleet. Then nine more in electrical and electronic signals work,
+        running squadron-wide casualty data collection and managing teams of
+        technicians.
+      </p>
+      <p>
+        After the Navy I worked as a senior field applications specialist for
+        Lutron, then ran my own business technology consultancy in Los Angeles.
+        Along the way I picked up a data analytics fundamentals from a
+        bootcamp at USC, kept coding through Pasadena City College, and shipped
+        production tooling at KLA.
+      </p>
+      <p>
+        Today I'm an undergraduate <strong>Data Science</strong> student at the
+        University of Arkansas — an interdisciplinary program across the
+        Business, Science, and Engineering colleges. I program in Python,
+        JavaScript, and C++, with a focus on agricultural commodity data,
+        statistical analysis, and turning rich datasets into things you can
+        actually click on. Lately that's been coffee. A lot of coffee.
+      </p>
+      <p class="aside">
+        Hobbies, by way of explanation: ♆ diving, 🪂 skydiving, 🏄 surfing,
+        🏂 snowboarding, 🧘 yoga, 💃🏽🕺 salsa &amp; swing, and — for the long
+        game — fermenting kombucha in a glass dispenser on my counter.
+      </p>
+    </div>
+  </section>
 
-										<h3>Welcome to my GitHub Pages!</h3>
-									</header> -->
-									<h4>My GitHub profile is located <a class="button small" href="https://github.com/warrenrross">here</a>.</h4>
-									
-									<p>I am using this platform to tell a little bit about where I've been, where I'm going and share some of the work I've done.</p>
-								</div>
-							</section>
+  <!-- WORK ------------------------------------------------------------ -->
+  <section id="work" class="section section-work">
+    <div class="container">
+      <header class="section-head">
+        <h2>Selected work</h2>
+        <p class="section-sub">Hand-picked, not exhaustive. Click any card for the live demo; "Code" for the repo.</p>
+      </header>
 
+      <div class="cards">
 
-						<!-- Three -->
-							<section id="two">
-								<div class="container">
-									<h3>Portfolio</h3>
-									<p>Coding projects I have hosted on GitHub. <b>Click Image</b> to see demo of each.</p>
-									<div class="features">
-										<article>
-											<a href="https://warrenrross.github.io/USC_Homework-14_GeoMapping/" class="image"><img src="images/1-Logo.png" alt="" /></a>
-											<div class="inner">
-												<h4>Shaking things up...</h4>
-												<p>A project mapping earthquake data from USGS. Click <b>image</b> to see demo or to see code click <a class="button small" href="https://github.com/warrenrross/USC_Homework-14_GeoMapping/">here</a>.</p>
-											</div>
-										</article>
-										<article>
-											<a href="https://warrenrross.github.io/JS-Image-Classifier/" class="image"><img src="images/sn-rockpaperscissor.jpg" alt="" /></a>
-											<div class="inner">
-												<h4>Image Classifier</h4>
-												<p>Take a look at a deployment of TensorFlow.js. Click <b>image</b> to see demo or to see code click <a class="button small" href="https://github.com/warrenrross/JS-Image-Classifier/">here</a>.</p>
-											</div>
-										</article>
-										<article>
-											<a href="https://warrenrross.github.io/bio/" class="image"><img src="images/bear-face-palm-2.jpg" alt="" /></a>
-											<div class="inner">
-												<h4>Light Hearted Bio</h4>
-												<p>Click the image to link to bio.</p>
-											</div>
-										</article>
-									</div>
-								</div>
-							</section>
+        <!-- 1. Bean to Brew (hero) -->
+        <article class="card card-hero">
+          <a class="card-media" href="https://warrenrross.github.io/Bean_to_Brew/" aria-label="Open the Bean to Brew live demo">
+            <div class="card-media-placeholder" aria-hidden="true">
+              <span class="emoji">☕️</span>
+              <span class="label">Bean to Brew</span>
+            </div>
+          </a>
+          <div class="card-body">
+            <span class="card-tag">Hero · Data viz · HTML/CSS/JS</span>
+            <h3>Bean to Brew</h3>
+            <p>
+              A five-chapter, browser-native rebuild of a Tableau workbook on
+              global coffee — production, climate stress, who exports to whom,
+              and where the United States fits in. Pure HTML, CSS, and
+              JavaScript. No build step.
+            </p>
+            <p class="card-links">
+              <a href="https://warrenrross.github.io/Bean_to_Brew/">Live demo →</a>
+              <a href="https://github.com/warrenrross/Bean_to_Brew">Code</a>
+            </p>
+          </div>
+        </article>
 
-						<!-- Two -->
-						<section id="three">
-							<div class="container">
-								<h3>About Me</h3>
-								<p>I grew up in Fayetteville, Arkansas. Fun fact, it's #4 on the list of best places to live according to <a href="https://realestate.usnews.com/places/rankings/best-places-to-live">USNews</a>.</p>
-								<p>I had a career in the military. After living in various areas around the Pacific Ocean during my service, I landed in Southern California. Now I'm pivoting my career to coding related activities.</p>
-								<p>I've rebooted with a coding bootcamp at USC and through transfer learning have repurposed my neural network for Data Science and Dev Ops...</p>
-								<h4>Things of interest!</h4>
-								<blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/mkennedy?ref_src=twsrc%5Etfw">@mkennedy</a> Have you seen this too, Streamlit? It is implemented in pure Python and results in a web-app interface for ML models.<br><br>Props to <a href="https://twitter.com/therriaultphd?ref_src=twsrc%5Etfw">@therriaultphd</a>. Great article!<br><br>Turn Python Scripts into Beautiful ML Tools by Adrien Treuille <a href="https://t.co/I4CJnRwrUL">https://t.co/I4CJnRwrUL</a></p>&mdash; Warren Ross (@warrenrross) <a href="https://twitter.com/warrenrross/status/1185441392895545344?ref_src=twsrc%5Etfw">October 19, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-								<p>Also...</p>
-								<ul class="feature-icons">
-									<li class="icon solid fa-code">Writing all the code</li>
-									<li class="icon solid fa-book">Reading the manuel</li>
-									<li class="icon solid fa-coffee">Drinking lots of tea</li>
-									<li class="icon solid fa-users">Being social at parties</li>
-								</ul>
-							</div>
-						</section>
+        <!-- 2. Grounds for Correlation -->
+        <article class="card">
+          <a class="card-media" href="https://warrenrross.github.io/coffee_bean_production_analysis/" aria-label="Open the Grounds for Correlation analysis">
+            <div class="card-media-placeholder" aria-hidden="true">
+              <span class="emoji">📈</span>
+              <span class="label">Grounds for Correlation</span>
+            </div>
+          </a>
+          <div class="card-body">
+            <span class="card-tag">Statistical analysis · Marimo · Python</span>
+            <h3>Grounds for Correlation</h3>
+            <p>
+              Do climate, population, and oil price predict coffee bean
+              production and export revenue? Thirty years, ~60 producing
+              countries, FAO + BACI/CEPII data. Published as an interactive
+              Marimo notebook so every chart and statistic is reproducible in
+              the browser.
+            </p>
+            <p class="card-links">
+              <a href="https://warrenrross.github.io/coffee_bean_production_analysis/">Live notebook →</a>
+              <a href="https://github.com/warrenrross/coffee_bean_production_analysis">Code</a>
+            </p>
+          </div>
+        </article>
 
-						<!-- Four -->
-							<section id="four">
-								<div class="container">
-									<h3>Contact Me</h3>
-									<p>I am interested in hearing what you are working on!</p>
-									<ul class="icons">
-											<li><a href="https://www.linkedin.com/in/warrenrross" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
-											<li><a href="https://github.com/warrenrross" class="icon brands fa-github"><span class="label">Github</span></a></li>
-											<li><a href="https://medium.com/@warrenrross" class="icon brands fa-medium"><span class="label">Medium</span></a></li>
-											<li><a href="https://twitter.com/warrenrross" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-											<li><a href="https://dev.to/warrenrross" class="icon brands fa-dev"><span class="label">DEV Profile</span></a></li>
-											<li><a href="https://www.instagram.com/warrenrross/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										</ul>
-								</div>
-							</section>
+        <!-- 3. live-quakes -->
+        <article class="card">
+          <a class="card-media" href="https://warrenrross.github.io/live-quakes/" aria-label="Open the live-quakes earthquake map">
+            <div class="card-media-placeholder" aria-hidden="true">
+              <span class="emoji">🌐</span>
+              <span class="label">live-quakes</span>
+            </div>
+          </a>
+          <div class="card-body">
+            <span class="card-tag">Geospatial · Leaflet · USGS feed</span>
+            <h3>live-quakes</h3>
+            <p>
+              An interactive map of recent earthquake activity from the live
+              USGS GeoJSON feed, with a scrubbable timeline so you can watch
+              seismic events populate in sequence. Built on Leaflet with a
+              modern muted basemap and clean Google-Maps-style info cards.
+            </p>
+            <p class="card-links">
+              <a href="https://warrenrross.github.io/live-quakes/">Live demo →</a>
+              <a href="https://github.com/warrenrross/live-quakes">Code</a>
+            </p>
+          </div>
+        </article>
 
-						<!-- Five -->
-						<!--
-							<section id="five">
-								<div class="container">
-									<h3>Elements</h3>
+        <!-- 4. RPS vs the Browser -->
+        <article class="card">
+          <a class="card-media" href="https://github.com/warrenrross/JS-Image-Classifier" aria-label="Open the RPS vs the Browser repo">
+            <div class="card-media-placeholder" aria-hidden="true">
+              <span class="emoji">✊✋✌️</span>
+              <span class="label">RPS vs the Browser</span>
+            </div>
+          </a>
+          <div class="card-body">
+            <span class="card-tag">Browser ML · TensorFlow.js · WIP</span>
+            <h3>RPS vs the Browser</h3>
+            <p>
+              Train an image classifier on your own webcam captures, then play
+              Rock-Paper-Scissors against the model you just trained. The
+              gamify-your-classifier idea I started in 2019 — currently being
+              finished as a browser-only sibling to <em>Hand_AI</em>.
+            </p>
+            <p class="card-links">
+              <a href="https://github.com/warrenrross/JS-Image-Classifier">Code &amp; plan →</a>
+            </p>
+          </div>
+        </article>
 
-									<section>
-										<h4>Text</h4>
-										<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-										This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-										This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-										<hr />
-										<header>
-											<h4>Heading with a Subtitle</h4>
-											<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-										</header>
-										<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-										<header>
-											<h5>Heading with a Subtitle</h5>
-											<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-										</header>
-										<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-										<hr />
-										<h2>Heading Level 2</h2>
-										<h3>Heading Level 3</h3>
-										<h4>Heading Level 4</h4>
-										<h5>Heading Level 5</h5>
-										<h6>Heading Level 6</h6>
-										<hr />
-										<h5>Blockquote</h5>
-										<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-										<h5>Preformatted</h5>
-										<pre><code>i = 0;
+        <!-- 5. Hand_AI -->
+        <article class="card">
+          <a class="card-media" href="https://github.com/warrenrross/Hand_AI" aria-label="Open the Hand_AI repo">
+            <div class="card-media-placeholder" aria-hidden="true">
+              <span class="emoji">🤖✋</span>
+              <span class="label">Hand_AI</span>
+            </div>
+          </a>
+          <div class="card-body">
+            <span class="card-tag">Browser ML · MediaPipe · WIP</span>
+            <h3>Hand_AI</h3>
+            <p>
+              The open-ended sibling of RPS vs the Browser: capture your own
+              classes from a webcam, train an in-browser hand classifier with
+              an edge-capable model, and probe it interactively. Currently
+              being rebuilt browser-only — no backend required.
+            </p>
+            <p class="card-links">
+              <a href="https://github.com/warrenrross/Hand_AI">Code &amp; plan →</a>
+            </p>
+          </div>
+        </article>
 
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
+        <!-- 6. JabberJuicy -->
+        <article class="card">
+          <a class="card-media" href="https://jabberjuicy.com/" aria-label="Open jabberjuicy.com">
+            <div class="card-media-placeholder" aria-hidden="true">
+              <span class="emoji">🧃</span>
+              <span class="label">JabberJuicy</span>
+            </div>
+          </a>
+          <div class="card-body">
+            <span class="card-tag">Full-stack · C# / SQL Server · Team project</span>
+            <h3>JabberJuicy</h3>
+            <p>
+              A full-stack juice-bar ordering application themed on
+              <em>Jabberwocky</em>. Live SQL-Server-backed menu, cart, checkout,
+              and order history. Shipped with a four-person team — I led app
+              development and deployment.
+            </p>
+            <p class="card-links">
+              <a href="https://jabberjuicy.com/">jabberjuicy.com →</a>
+              <a href="https://github.com/warrenrross/jabberjuicy">Code</a>
+            </p>
+          </div>
+        </article>
 
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-									</section>
+      </div>
+    </div>
+  </section>
 
-									<section>
-										<h4>Lists</h4>
-										<div class="row">
-											<div class="col-6 col-12-xsmall">
-												<h5>Unordered</h5>
-												<ul>
-													<li>Dolor pulvinar etiam magna etiam.</li>
-													<li>Sagittis adipiscing lorem eleifend.</li>
-													<li>Felis enim feugiat dolore viverra.</li>
-												</ul>
-												<h5>Alternate</h5>
-												<ul class="alt">
-													<li>Dolor pulvinar etiam magna etiam.</li>
-													<li>Sagittis adipiscing lorem eleifend.</li>
-													<li>Felis enim feugiat dolore viverra.</li>
-												</ul>
-											</div>
-											<div class="col-6 col-12-xsmall">
-												<h5>Ordered</h5>
-												<ol>
-													<li>Dolor pulvinar etiam magna etiam.</li>
-													<li>Etiam vel felis at lorem sed viverra.</li>
-													<li>Felis enim feugiat dolore viverra.</li>
-													<li>Dolor pulvinar etiam magna etiam.</li>
-													<li>Etiam vel felis at lorem sed viverra.</li>
-													<li>Felis enim feugiat dolore viverra.</li>
-												</ol>
-												<h5>Icons</h5>
-												<ul class="icons">
-													<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-													<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-													<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-													<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-													<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-													<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
-												</ul>
-											</div>
-										</div>
-										<h5>Actions</h5>
-										<ul class="actions">
-											<li><a href="#" class="button primary">Default</a></li>
-											<li><a href="#" class="button">Default</a></li>
-											<li><a href="#" class="button alt">Default</a></li>
-										</ul>
-										<ul class="actions small">
-											<li><a href="#" class="button primary small">Small</a></li>
-											<li><a href="#" class="button small">Small</a></li>
-											<li><a href="#" class="button alt small">Small</a></li>
-										</ul>
-										<div class="row">
-											<div class="col-3 col-6-medium col-12-xsmall">
-												<ul class="actions stacked">
-													<li><a href="#" class="button primary">Default</a></li>
-													<li><a href="#" class="button">Default</a></li>
-													<li><a href="#" class="button alt">Default</a></li>
-												</ul>
-											</div>
-											<div class="col-3 col-6 col-12-xsmall">
-												<ul class="actions stacked">
-													<li><a href="#" class="button primary small">Small</a></li>
-													<li><a href="#" class="button small">Small</a></li>
-													<li><a href="#" class="button alt small">Small</a></li>
-												</ul>
-											</div>
-											<div class="col-3 col-6-medium col-12-xsmall">
-												<ul class="actions stacked">
-													<li><a href="#" class="button primary fit">Default</a></li>
-													<li><a href="#" class="button fit">Default</a></li>
-													<li><a href="#" class="button alt fit">Default</a></li>
-												</ul>
-											</div>
-											<div class="col-3 col-6-medium col-12-xsmall">
-												<ul class="actions stacked">
-													<li><a href="#" class="button primary small fit">Small</a></li>
-													<li><a href="#" class="button small fit">Small</a></li>
-													<li><a href="#" class="button alt small fit">Small</a></li>
-												</ul>
-											</div>
-										</div>
-									</section>
+  <!-- WRITING --------------------------------------------------------- -->
+  <section id="writing" class="section section-writing">
+    <div class="container narrow">
+      <header class="section-head">
+        <h2>Writing</h2>
+        <p class="section-sub">A featured long-form piece. More on <a href="https://medium.com/@warrenrross">Medium</a>.</p>
+      </header>
 
-									<section>
-										<h4>Table</h4>
-										<h5>Default</h5>
-										<div class="table-wrapper">
-											<table>
-												<thead>
-													<tr>
-														<th>Name</th>
-														<th>Description</th>
-														<th>Price</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>Item One</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Two</td>
-														<td>Vis ac commodo adipiscing arcu aliquet.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Three</td>
-														<td> Morbi faucibus arcu accumsan lorem.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Four</td>
-														<td>Vitae integer tempus condimentum.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Five</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-												</tbody>
-												<tfoot>
-													<tr>
-														<td colspan="2"></td>
-														<td>100.00</td>
-													</tr>
-												</tfoot>
-											</table>
-										</div>
+      <article class="featured-post">
+        <div class="featured-meta">
+          <span class="featured-kicker">Featured · Medium</span>
+          <h3>Best Kombucha Tutorial Ever</h3>
+          <p class="featured-sub">Kombucha Conversations — a text-message exchange turned practical brewing tutorial. Tea strength, sugar, cooling the wort, keeping the SCOBY at room temperature, and the small things that decide whether you get kombucha or get mold.</p>
+          <p class="featured-date">Jul 3, 2021 · ~6 min read</p>
+          <p>
+            <a class="btn primary small" href="https://medium.com/@warrenrross/best-kombucha-tutorial-ever-839739ac72f0">Read on Medium →</a>
+          </p>
+        </div>
+        <div class="featured-art" aria-hidden="true">
+          <span class="featured-emoji">🍵</span>
+        </div>
+      </article>
+    </div>
+  </section>
 
-										<h5>Alternate</h5>
-										<div class="table-wrapper">
-											<table class="alt">
-												<thead>
-													<tr>
-														<th>Name</th>
-														<th>Description</th>
-														<th>Price</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>Item One</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Two</td>
-														<td>Vis ac commodo adipiscing arcu aliquet.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Three</td>
-														<td> Morbi faucibus arcu accumsan lorem.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Four</td>
-														<td>Vitae integer tempus condimentum.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Five</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-												</tbody>
-												<tfoot>
-													<tr>
-														<td colspan="2"></td>
-														<td>100.00</td>
-													</tr>
-												</tfoot>
-											</table>
-										</div>
-									</section>
+  <!-- CONNECT --------------------------------------------------------- -->
+  <section id="connect" class="section section-connect">
+    <div class="container narrow">
+      <h2>Connect</h2>
+      <p>Reach out anywhere — I read all of these.</p>
+      <ul class="connect-list">
+        <li>
+          <a href="https://www.linkedin.com/in/warrenrross">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.22 8.02h4.56V24H.22V8.02zM8.34 8.02h4.37v2.18h.06c.61-1.15 2.1-2.36 4.32-2.36 4.62 0 5.47 3.04 5.47 7v9.16h-4.56v-8.12c0-1.94-.04-4.44-2.7-4.44-2.71 0-3.12 2.11-3.12 4.3V24H8.34V8.02z"/></svg>
+            <span>LinkedIn</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/warrenrross">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.87-1.54-3.87-1.54-.52-1.32-1.27-1.68-1.27-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.68 1.25 3.34.96.1-.74.4-1.25.72-1.54-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.18 1.18.92-.26 1.91-.39 2.89-.39.98 0 1.97.13 2.89.39 2.2-1.49 3.17-1.18 3.17-1.18.62 1.59.23 2.76.11 3.05.74.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.4-5.25 5.69.41.35.78 1.05.78 2.12 0 1.53-.01 2.76-.01 3.13 0 .31.21.67.8.56C20.22 21.38 23.5 17.07 23.5 12 23.5 5.65 18.35.5 12 .5z"/></svg>
+            <span>GitHub</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://medium.com/@warrenrross">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M2.846 6.887c.03-.295-.083-.586-.303-.784L.531 3.74V3.36h7.034l5.435 11.94L18.78 3.36h6.7v.38l-1.806 1.737a.529.529 0 0 0-.2.506v12.726c-.024.18.052.358.198.466l1.764 1.737v.38H16.55v-.38l1.825-1.78c.179-.18.179-.232.179-.506V7.617L13.476 20.21h-.683L6.866 7.617v8.447c-.05.363.071.728.327.99l2.372 2.886v.38H2.842v-.38L5.215 19.05c.255-.262.368-.628.31-.989V6.887z"/></svg>
+            <span>Medium</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://x.com/warrenrross">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            <span>X</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://dev.to/warrenrross">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7.42 10.05c-.18-.16-.46-.23-.84-.23H6l.02 2.44.04 2.45.56-.02c.41 0 .63-.07.83-.26.24-.24.26-.36.26-2.2 0-1.91-.02-1.96-.29-2.18zM0 4.94v14.12h24V4.94H0zm8.56 9.66c-.45.45-1.07.66-1.97.66H4.83V8.13h1.69c1.36 0 1.99.21 2.41.81.31.45.32.5.36 3.34.03 2.71-.05 3.1-.73 3.32zm5.42-5.42a59.5 59.5 0 0 0-2.05-.04l-.04 1.35-.04 1.34h.61c.34 0 .69.04.78.08.18.08.18.69 0 .77-.08.04-.43.08-.79.08h-.69v3l1.04-.04 1.05-.04.04-.41.03-.41h1.21l-.05.69c-.06.92-.39 1.4-1.07 1.55-.69.16-2.46.08-2.66-.12-.04-.04-.09-1.66-.11-3.61l-.04-3.56h-.61c-.7 0-.86-.16-.86-.94 0-.81-.16-.81 2.4-.81 2.46 0 2.32-.07 2.32 1.13zm6.75 6.61c-.7 2.05-.93 2.39-1.66 2.39-.69 0-1.04-.4-1.21-1.41-.04-.31-1.78-6.7-1.84-6.81-.04-.12.13-.18.74-.18h.71l.65 2.65c.36 1.46.66 2.65.66 2.65s.32-1.19.69-2.65l.65-2.65h.72c.71 0 .72 0 .65.24-.03.13-.41 1.27-.84 2.52z"/></svg>
+            <span>DEV</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/warrenrross/">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16M12 0C8.74 0 8.33.01 7.05.07 5.77.13 4.9.33 4.14.63a5.86 5.86 0 0 0-2.13 1.39A5.86 5.86 0 0 0 .62 4.14c-.3.76-.5 1.63-.56 2.91C0 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.28.26 2.15.56 2.91a5.86 5.86 0 0 0 1.39 2.13 5.86 5.86 0 0 0 2.13 1.39c.76.3 1.63.5 2.91.56C8.33 24 8.74 24 12 24s3.67-.01 4.95-.07c1.28-.06 2.15-.26 2.91-.56a5.86 5.86 0 0 0 2.13-1.39 5.86 5.86 0 0 0 1.39-2.13c.3-.76.5-1.63.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.28-.26-2.15-.56-2.91a5.86 5.86 0 0 0-1.39-2.13A5.86 5.86 0 0 0 19.86.62c-.76-.3-1.63-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84A6.16 6.16 0 1 0 12 18.16 6.16 6.16 0 0 0 12 5.84zm0 10.16A4 4 0 1 1 12 8a4 4 0 0 1 0 8zm6.4-11.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/></svg>
+            <span>Instagram</span>
+          </a>
+        </li>
+        <li class="connect-email">
+          <a href="mailto:warren.r.ross@gmail.com">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M2 4h20a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm10 8.4L3.5 6.2v12.6h17V6.2L12 12.4zM4.6 6l7.4 5.4L19.4 6H4.6z"/></svg>
+            <span>warren.r.ross@gmail.com</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
 
-									<section>
-										<h4>Buttons</h4>
-										<ul class="actions">
-											<li><a href="#" class="button primary">Primary</a></li>
-											<li><a href="#" class="button">Default</a></li>
-											<li><a href="#" class="button alt">Alternate</a></li>
-										</ul>
-										<ul class="actions">
-											<li><a href="#" class="button primary large">Large</a></li>
-											<li><a href="#" class="button">Default</a></li>
-											<li><a href="#" class="button alt small">Small</a></li>
-										</ul>
-										<ul class="actions fit">
-											<li><a href="#" class="button primary fit">Fit</a></li>
-											<li><a href="#" class="button fit">Fit</a></li>
-											<li><a href="#" class="button alt fit">Fit</a></li>
-										</ul>
-										<ul class="actions fit small">
-											<li><a href="#" class="button primary fit small">Fit + Small</a></li>
-											<li><a href="#" class="button fit small">Fit + Small</a></li>
-											<li><a href="#" class="button alt fit small">Fit + Small</a></li>
-										</ul>
-										<ul class="actions">
-											<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-											<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-											<li><a href="#" class="button alt icon solid fa-check">Icon</a></li>
-										</ul>
-										<ul class="actions">
-											<li><span class="button primary disabled">Primary</span></li>
-											<li><span class="button disabled">Default</span></li>
-											<li><span class="button alt disabled">Alternate</span></li>
-										</ul>
-									</section>
+</main>
 
-									<section>
-										<h4>Form</h4>
-										<form method="post" action="#">
-											<div class="row gtr-uniform">
-												<div class="col-6 col-12-xsmall">
-													<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-												</div>
-												<div class="col-6 col-12-xsmall">
-													<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-												</div>
-												<div class="col-12">
-													<select name="demo-category" id="demo-category">
-														<option value="">- Category -</option>
-														<option value="1">Manufacturing</option>
-														<option value="1">Shipping</option>
-														<option value="1">Administration</option>
-														<option value="1">Human Resources</option>
-													</select>
-												</div>
-												<div class="col-4 col-12-medium">
-													<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-													<label for="demo-priority-low">Low Priority</label>
-												</div>
-												<div class="col-4 col-12-medium">
-													<input type="radio" id="demo-priority-normal" name="demo-priority">
-													<label for="demo-priority-normal">Normal Priority</label>
-												</div>
-												<div class="col-4 col-12-medium">
-													<input type="radio" id="demo-priority-high" name="demo-priority">
-													<label for="demo-priority-high">High Priority</label>
-												</div>
-												<div class="col-6 col-12-medium">
-													<input type="checkbox" id="demo-copy" name="demo-copy">
-													<label for="demo-copy">Email me a copy of this message</label>
-												</div>
-												<div class="col-6 col-12-medium">
-													<input type="checkbox" id="demo-human" name="demo-human" checked>
-													<label for="demo-human">I am a human and not a robot</label>
-												</div>
-												<div class="col-12">
-													<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-												</div>
-												<div class="col-12">
-													<ul class="actions">
-														<li><input type="submit" value="Send Message" /></li>
-														<li><input type="reset" value="Reset" class="alt" /></li>
-													</ul>
-												</div>
-											</div>
-										</form>
-									</section>
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2026 Warren Ross. Built by hand with HTML &amp; CSS. <a href="https://github.com/warrenrross/warrenrross.github.io">View source</a>.</p>
+  </div>
+</footer>
 
-									<section>
-										<h4>Image</h4>
-										<h5>Fit</h5>
-										<span class="image fit"><img src="images/banner.jpg" alt="" /></span>
-										<div class="box alt">
-											<div class="row gtr-50 gtr-uniform">
-												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-											</div>
-										</div>
-										<h5>Left &amp; Right</h5>
-										<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-										<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-									</section>
-
-								</div>
-							</section>
-						-->
-
-					</div>
-
-				<!-- Footer -->
-					<section id="footer">
-						<div class="container">
-							<ul class="copyright">
-								<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</section>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+</body>
 </html>
