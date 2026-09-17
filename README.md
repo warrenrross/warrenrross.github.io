@@ -12,14 +12,6 @@
 - [Instagram](https://www.instagram.com/warrenrross/)
 
 
-**The template for this site came from:**  
-Read Only by HTML5 UP  
-html5up.net | @ajlkn  
-
-AJ created the template and his full contact is here:
-aj@lkn.io | @ajlkn
-
-
 
 Credits:
 
